@@ -7,6 +7,7 @@ var Generator = module.exports = function Generator() {
   yeoman.Base.apply(this, arguments);
 };
 
+
 util.inherits(Generator, yeoman.Base);
 
 Generator.prototype.deprecated = function deprecated() {
