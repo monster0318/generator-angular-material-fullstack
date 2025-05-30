@@ -6,6 +6,7 @@
 
 var <%= classedName %> = require('./<%= name %>.model');
 
+
 exports.register = function(socket) {
   <%= classedName %>.schema.post('save', function (doc) {
     onSave(socket, doc);
