@@ -1,7 +1,8 @@
 'use strict';
 
 var _ = require('lodash');<% if (filters.mongoose) { %>
-var <%= classedName %> = require('./<%= name %>.model');<% } %>
+
+ <%= classedName %> = require('./<%= name %>.model');<% } %>
 
 // Get list of <%= name %>s
 exports.index = function(req, res) {<% if (!filters.mongoose) { %>
